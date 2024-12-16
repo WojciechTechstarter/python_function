@@ -40,5 +40,7 @@ def calculator():
         number_1 = float(input('Input the first number: '))
         number_2 = float(input('Input the second number: '))
         print(div(number_1, number_2))
+    else:
+        print(f'Incorrect input! Type `add`, `subtract`, `mult` or `div`!')
 
 calculator()
