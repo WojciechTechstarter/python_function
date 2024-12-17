@@ -2,8 +2,6 @@
 def area(length, width):
     return length * width
 
-
-
 def calc_area():
     length = float(input('Input the length of the rectangle: '))
     width = float(input('Input the width of the rectangle: '))
