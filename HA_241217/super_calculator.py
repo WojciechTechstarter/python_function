@@ -2,9 +2,6 @@
 
 # Make a calculator, that is able to perform many task
 
-
-############################################################## NOT DONE YET #############################################
-
 # Basic calculator calculations 
 
 def add(number_1, number_2):
@@ -35,26 +32,29 @@ def Fahrennheit(value):         # F to C
     return (value - 32) * 5/9
 
 
-
-
 # Ask a user
 
 def calculator():
     user_input = input('Input given number to perform a task: 1 - add, 2 - subtract, 3 - multiply, 4 - divide, 5 - calc area of a rectangle, 6 - convert miles to kilometers, 7 - convert kilometers to miles, 8 - convert C to F, 9 - convert F to C. ')
 
-    number_1 = float(input('Input the first number: '))
-    number_2 = float(input('Input the second number: '))
-
     if user_input == '1':
+        number_1 = float(input('Input the first number: '))
+        number_2 = float(input('Input the second number: '))
         print(f'{number_1} + {number_2} = {add(number_1, number_2)}')
 
     elif user_input == '2':
+        number_1 = float(input('Input the first number: '))
+        number_2 = float(input('Input the second number: '))
         print(f'{number_1} - {number_2} = {subtract(number_1, number_2)}')
 
     elif user_input == '3':
+        number_1 = float(input('Input the first number: '))
+        number_2 = float(input('Input the second number: '))
         print(f'{number_1} * {number_2} = {mult(number_1, number_2)}')
 
     elif user_input == '4':
+        number_1 = float(input('Input the first number: '))
+        number_2 = float(input('Input the second number: '))
         print(f'{number_1} / {number_2} = {div(number_1, number_2)}')
 
     elif user_input == '5':
@@ -74,13 +74,13 @@ def calculator():
          value = float(input('Input a temperature in Ceclius: '))
          print(f'The temperature in Fahrenheit is: {(Celsius(value))}')
 
-    elif user_input == '8':
+    elif user_input == '9':
          value = float(input('Input a temperature in Fahrenheit: '))
          print(f'The temperature in Celcius is: {(Fahrennheit(value))}')
-
-
 
     else:
         print(f'Incorrect input! Type `add`, `subtract`, `mult` or `div`!')
 
 calculator()
+
+
