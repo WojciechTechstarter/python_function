@@ -9,17 +9,16 @@ import random
 
 options = ['Rock', 'Paper', 'Scissors']
 
-# User's choice
 
 
 def rps():
-    user = input('Choose Rock, Paper or Scissors. ')
+    user = input('Choose Rock, Paper or Scissors. ')  # User's choice
     print(f'You chose {user}.')
 
-    computer = random.choice(options)
+    computer = random.choice(options)               # Computer's choice
     print(f'Computer chose {computer}.')
 
-    if user == computer:
+    if user == computer:                            # Deciding who is the winner
         print('It is a draw')
 
     elif user == 'Rock' and computer == 'Scissors' or \
