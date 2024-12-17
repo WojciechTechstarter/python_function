@@ -21,25 +21,20 @@ def div(number_1, number_2):
 def calculator():
     user_input = input('Would you like to add, subtract, mult or div? ')
 
+    number_1 = float(input('Input the first number: '))
+    number_2 = float(input('Input the second number: '))
+
     if user_input == 'add':
-        number_1 = float(input('Input the first number: '))
-        number_2 = float(input('Input the second number: '))
-        print(add(number_1, number_2))
+        print(f'{number_1} + {number_2} = {add(number_1, number_2)}')
 
     elif user_input == 'subtract':
-        number_1 = float(input('Input the first number: '))
-        number_2 = float(input('Input the second number: '))
-        print(subtract(number_1, number_2))
+        print(f'{number_1} - {number_2} = {subtract(number_1, number_2)}')
 
     elif user_input == 'mult':
-        number_1 = float(input('Input the first number: '))
-        number_2 = float(input('Input the second number: '))
-        print(mult(number_1, number_2))
+        print(f'{number_1} * {number_2} = {mult(number_1, number_2)}')
 
     elif user_input == 'div':
-        number_1 = float(input('Input the first number: '))
-        number_2 = float(input('Input the second number: '))
-        print(div(number_1, number_2))
+        print(f'{number_1} / {number_2} = {div(number_1, number_2)}')
     else:
         print(f'Incorrect input! Type `add`, `subtract`, `mult` or `div`!')
 
