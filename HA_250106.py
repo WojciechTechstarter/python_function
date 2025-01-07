@@ -36,13 +36,18 @@ list_of_numbers.append(user_5)
 
 print(list_of_numbers)
 
+for x in range()
+
 sum = 0
 average = 0
 
 for _ in list_of_numbers:
     sum += _
     
-print(f'The sum = {sum}, the average = {sum/5}')
+
+average = sum/len(list_of_numbers)
+
+print(f'The sum = {sum}, the average = {average}')
 
 
 
