@@ -28,7 +28,20 @@ my_car.fahren(100)
 my_car.fahren(100)
 
 print(my_car.restreichweite)
-
 my_car.tanken(200)
-
 print(my_car.restreichweite)
+
+print(f'Kilometerstand: {my_car.kilometerzahl}')
+
+#  ---- Erbrende Klasse: E_auto
+class Verbrennner(auto):
+    def __init__(self, name, kilometer):
+        self.super(name, 'Verbrenner', kilometer)
+        self.tankstand = 100
+
+    def tanken(self, km):
+        self.tankstand +- km
+
+#  ---- Erbrende Klasse: E_auto
+class E_auto(auto):
+    def __init__
