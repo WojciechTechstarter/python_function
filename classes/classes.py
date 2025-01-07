@@ -1,7 +1,7 @@
 
 
 class auto():
-    def __init__(name, motor, reichweite, kilometer):
+    def __init__(self, name, motor, reichweite, kilometer):
         self.name = name
         self.motor = motor
         self.restreichweite = reichweite
