@@ -14,7 +14,7 @@ import requests
 # print(f"The weather in Berlin is {wetter} with {temperatur}°C")
 
 
-# Aufgabe 2
+##########   Aufgabe 2    ###################
 
 ###wrong aproach
 #response = requests.get('https://wttr.in/warsaw?format=j1')
