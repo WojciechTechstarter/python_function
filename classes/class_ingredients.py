@@ -47,10 +47,11 @@ recipe_1.add_ingredient(potato, '300g')
 # Test
 print(recipe_1.name, recipe_1.description)
 # in order to print a whole dictionary we need a loop, that calls both the key and its value
+#### Was that info during the classes ?? ####
 
-for ingredient, quantity in recipe.list_of_ingredients.items():
+for ingredient, quantity in recipe.list_of_ingredients.items():     # without .items we would get only keys
     print()
 
 
 #  I stop here, seems a little complicated for now. I definetly got something out of it,
-#  but many questions appear and I did it mostly with the help of ChatGPT (which is fine, helped alot to understand some things).
+#  but many questions appear and I did it mostly with the help of ChatGPT (which is fine, helped alot to understand a few things).
